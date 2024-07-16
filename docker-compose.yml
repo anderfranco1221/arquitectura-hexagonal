@@ -1,0 +1,21 @@
+version: '1'
+
+services:
+  api: 
+    container_name: arquiHexagonal
+    image: ander1221/arqui_hexagonal
+    volumes:
+      - ./app:/app
+    ports:
+      - 8000:8000
+    command: ["uvicorn", "app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
+
+  db:
+    container_name: ${POSGRES_NAME}
+    image: postgres
+    ports:
+      - ${DB_PORT}:5432
+
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
