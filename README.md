@@ -37,7 +37,10 @@ El objetivo principal de esta iniciativa es adaptar el proyecto a una arquitectu
 - Conocimientos básicos de patrones de diseño y principios SOLID.
 - Familiaridad con el lenguaje de programación y frameworks utilizados en el proyecto.
 - Disposición para aprender y aplicar nuevos conceptos arquitectónicos.
+- Conocimientos en python y el framework de fast api
+- Conocimientos básicos de Docker y las acciones de git hub
 
 ## Conclusión
 
 La implementación de una arquitectura hexagonal en este proyecto es un paso clave para garantizar su sostenibilidad a largo plazo. Se espera que la investigación y adaptación a esta arquitectura ofrezcan mejoras significativas en la calidad y flexibilidad del código.
+
